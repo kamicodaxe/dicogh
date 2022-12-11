@@ -23,7 +23,6 @@ function App() {
   useEffect(() => {
     const words = require('./words.json')
     setList(words)
-    console.log(words)
   }, [])
 
   return (
