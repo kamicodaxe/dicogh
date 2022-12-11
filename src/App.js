@@ -31,7 +31,7 @@ function App() {
 
       <div className='flex flex-row'>
 
-        <div className="flex flex-col h-screen p-3 w-60 dark:bg-gray-900 dark:text-gray-100">
+        <div className="flex flex-col h-screen overflow-y-hidden p-3 w-60 dark:bg-gray-900 dark:text-gray-100">
           <div className="space-y-3">
             <div className="flex items-center justify-between">
               <h2>Dictionnaire</h2>
@@ -46,7 +46,7 @@ function App() {
               </span>
               <input onChange={e => setSearchString(e.currentTarget.value)} type="search" name="Search" placeholder="Recherche..." className="w-full py-2 pl-10 text-sm dark:border-transparent rounded-md focus:outline-none dark:bg-gray-800 dark:text-gray-100 focus:dark:bg-gray-900" />
             </div>
-            <div className="flex flex-1 overflow-y-scroll">
+            <div className="flex flex-1 h-full">
               <ul className="pt-2 pb-4 space-y-1 text-sm">
 
                 {
